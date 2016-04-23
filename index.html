@@ -53,12 +53,15 @@
         <![endif]-->
 		<nav class="container-fluid">
 			<ul>
-				<li onclick="gotoAnchor('overview')"></li>
+				<li onclick="gotoAnchor('overview')">Overview</li>
+				<li onclick="gotoAnchor('client')">The Client</li>
+				<li onclick="gotoAnchor('timeline')">Timeline</li>
+				<li onclick="gotoAnchor('team')">The Team</li>
 			</ul>
 		</nav>
 		<div class="container-fluid">
 			<section class="landing col-xs-12">
-				<div class="col-sm-3 header-logo">
+				<div class="col-sm-4 header-logo">
 					<img src="img/cobalt-white.png" alt="Cobalt Logo" />
 				</div>
 				<header class="col-sm-7 col-md-5">
@@ -69,12 +72,33 @@
 			<section class="col-xs-12 overview">
 				<div class="blank">
 					<div class="row">
-						<div class="col-sm-3">
-							<h2><a name="overview">Overview</a></h2>
+						<div class="col-sm-4 heading">
+							<a name="overview"></a>
+							<h2>Overview</h2>
 						</div>
 						<div class="col-sm-7 col-md-5">
-							<p>Team Cobalt is one of the capstone project team in Carnegie Mellon University's Masters of Educational Technology and Applied Learning Science. We are aware that that's a mouthful of things that people may not know, but worry not! It will be explained on our about section.</p>
-							<p>For this capstone project, we're teaming up with <a href="http://mari.com">MARi</a>, a company that creates deep profile of learners in order to help them close the gap towards their personal goals. More updates will be released later!</p>
+							<p>As part of the capstone program in Carnegie Mellon University, we partnered with MARi to create an engaging mobile experience that would help keep students in track with as well as motivate them on pursuing their career goals. We conducted research in several research areas with various user-centered methods to identify the current ways students are navigating their way towards their future careers, and how we can help facilitate and improve the process.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-xs-12 overview">
+				<div class="imaged client">
+					<div class="overlay"></div>
+					<div class="row">
+						<div class="col-sm-4 heading">
+							<a name="client"></a>
+							<h2>About MARi</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-xs-12 overview">
+				<div class="blank team">
+					<div class="row">
+						<div class="col-sm-offset-4 col-sm-7 col-md-5">
+							<p>MARi LLC is a human performance operating system that creates matches between students and potential employers using a match, gap, recommend process. One of the main goals that MARi has is to help students become better prepared for their careers of choice. Students will be able to keep their data even after they have graduated. The data from one student is actively used to inform the recommendations given to other students, giving MARi users a sense of community where students are able to support their peers. By interacting with MARi and providing each data stream, students are actively contributing data to the MARi platform, helping everyone reach their goals faster.</p>
+							<p>MARi is targeted towards various parties who are involved in the process of students’ academic and career tracking; from the students themselves, teachers, counselors, parents, as well as employers. However, this capstone project is focused on students in 9-12 grades as they begin their academic and career planning for post-secondary school and/or work.</p>
 						</div>
 					</div>
 				</div>
@@ -83,7 +107,8 @@
 				<div class="imaged who">
 					<div class="overlay"></div>
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-sm-4 heading">
+							<a name="team"></a>
 							<h2>Our Team</h2>
 						</div>
 					</div>
@@ -92,13 +117,14 @@
 			<section class="col-xs-12 overview">
 				<div class="blank team">
 					<div class="row">
-						<div class="col-sm-offset-3">
+						<div class="col-sm-offset-4">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="profile">
 										<img src="img/kathy.jpg" alt="Kathy" />
 										<div class="text">
-											<div class="button"><i class="fa fa-chevron-up"></i></div>
+											<div class="hidden-xs button"><i class="fa fa-chevron-up"></i></div>
+											<div class="visible-xs button"><i class="fa fa-chevron-down"></i></div>
 											<h3>Kathy</h3>
 											<p class="title">Team Lead</p>
 											<p>Kathleen Yu graduated from Carnegie Mellon in 2014 with a degree in Electrical and Computer Engineering and minor in Human-Computer Interaction. Before coming to METALS, she studied abroad in Istanbul, Turkey for a year. Currently, she is interested in Language Acquisition Technology for a career in that after graduation in August.</p>
@@ -109,7 +135,8 @@
 									<div class="profile">
 										<img src="img/sasha.jpg" alt="Sasha" />
 										<div class="text">
-											<div class="button"><i class="fa fa-chevron-up"></i></div>
+											<div class="hidden-xs button"><i class="fa fa-chevron-up"></i></div>
+											<div class="visible-xs button"><i class="fa fa-chevron-down"></i></div>
 											<h3>Sasha</h3>
 											<p class="title">Development Lead</p>
 											<p>Alexandra Brusilovsky (Sasha) graduated from the University of Pittsburgh in 2014 with degrees in Computer Science and Linguistics and a certificate in Russian and Eastern European Studies.</p>
@@ -122,7 +149,8 @@
 									<div class="profile">
 										<img src="img/halida.jpg" alt="Halida" />
 										<div class="text">
-											<div class="button"><i class="fa fa-chevron-up"></i></div>
+											<div class="hidden-xs button"><i class="fa fa-chevron-up"></i></div>
+											<div class="visible-xs button"><i class="fa fa-chevron-down"></i></div>
 											<h3>Halida</h3>
 											<p class="title">Design Lead</p>
 											<p>Halida A. Herwan pursued her undergraduate study in her home country in Indonesia. She graduated in 2011 from Bandung Institute of Technology, majoring in Informatics Engineering. Her interest in METALS came from her interest in using Human Computer Interaction for education in Indonesia.</p>
@@ -133,7 +161,8 @@
 									<div class="profile">
 										<img src="img/cassie.jpg" alt="Cassie" />
 										<div class="text">
-											<div class="button"><i class="fa fa-chevron-up"></i></div>
+											<div class="hidden-xs button"><i class="fa fa-chevron-up"></i></div>
+											<div class="visible-xs button"><i class="fa fa-chevron-down"></i></div>
 											<h3>Cassie</h3>
 											<p class="title">Consultant</p>
 											<p>Cassie Taylor is the Director of the Behavioral Economics and Evidence-Based Policy Lab at Carnegie Mellon. She graduated from the METALS program in 2015 and received an undergraduate degree in psychology from Princeton University (2012). Prior to METALS, she worked in analytical consulting.</p>
@@ -155,21 +184,24 @@
 				if(id == "top")
 					x = 0;
 				else
-					x = $('a[name="'+id+'"]').offset().top - 25;
+					x = $('a[name="'+id+'"]').offset().top - 125;
 				$('html,body').animate({scrollTop:x},'slow');
 			}	
 			$(".profile .text .button").click(function(){
 				var _this = $(this);
-				if(_this.find("i").hasClass("fa-chevron-up")){
+				var isOpened = true;
+				if((_this.hasClass("hidden-xs") && _this.find("i").hasClass("fa-chevron-up")) || (_this.hasClass("visible-xs") && _this.find("i").hasClass("fa-chevron-down"))) isOpened = false;
+				if(!isOpened){
 					_this.parent().css("height","100%");
-					_this.css({"top":"20px"});
-					_this.find('i').removeClass("fa-chevron-up").addClass("fa-chevron-down");
+					if(_this.hasClass("hidden-xs"))
+						_this.css({"top":"20px"});
 				}
 				else{
 					_this.parent().css("height","85px");
-					_this.css({"top":"-20px"});
-					_this.find('i').removeClass("fa-chevron-down").addClass("fa-chevron-up");
+					if(_this.hasClass("hidden-xs"))
+						_this.css({"top":"-20px"});
 				}
+				_this.find('i').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
 			})
 		</script>
 	</body>
