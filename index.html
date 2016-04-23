@@ -203,6 +203,10 @@
 				}
 				_this.find('i').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
 			})
+			var isiPad = navigator.userAgent.match(/iPad/i) != null;
+			if (isiPad){
+				$(".imaged").css("background-attachment","scroll")
+			}
 		</script>
 	</body>
 </html>
