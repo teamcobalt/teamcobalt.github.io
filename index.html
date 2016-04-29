@@ -55,7 +55,7 @@
 			<ul>
 				<li onclick="gotoAnchor('overview')">Overview</li>
 				<li onclick="gotoAnchor('client')">Client</li>
-				<li onclick="gotoAnchor('timeline')">Timeline</li>
+				<li onclick="gotoAnchor('process')">Process</li>
 				<li onclick="gotoAnchor('team')">Team</li>
 			</ul>
 		</nav>
@@ -88,7 +88,7 @@
 					<div class="row">
 						<div class="col-sm-4 heading">
 							<a name="client"></a>
-							<h2>About MARi</h2>
+							<h2>Our Client</h2>
 						</div>
 					</div>
 				</div>
@@ -99,6 +99,32 @@
 						<div class="col-sm-offset-4 col-sm-7 col-md-5">
 							<p>MARi LLC is a human performance operating system that creates matches between students and potential employers using a match, gap, recommend process. One of the main goals that MARi has is to help students become better prepared for their careers of choice. Students will be able to keep their data even after they have graduated. The data from one student is actively used to inform the recommendations given to other students, giving MARi users a sense of community where students are able to support their peers. By interacting with MARi and providing each data stream, students are actively contributing data to the MARi platform, helping everyone reach their goals faster.</p>
 							<p>MARi is targeted towards various parties who are involved in the process of students’ academic and career tracking; from the students themselves, teachers, counselors, parents, as well as employers. However, this capstone project is focused on students in 9-12 grades as they begin their academic and career planning for post-secondary school and/or work.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-xs-12 overview">
+				<div class="imaged how">
+					<div class="overlay"></div>
+					<div class="row">
+						<div class="col-sm-4 heading">
+							<a name="process"></a>
+							<h2>Our Process</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-xs-12 overview">
+				<div class="blank team">
+					<div class="row">
+						<div class="col-sm-offset-4 col-sm-7 col-md-5">
+							<p>We use various different techniques in doing our research, including but not limited to:</p>
+							<ol>
+								<li>Literature Review</li>
+								<li>Competitive Analysis</li>
+								<li>Stakeholder Interviews</li>
+								<li>Classroom Observation</li>
+							</ol>
 						</div>
 					</div>
 				</div>
@@ -181,10 +207,12 @@
 			/*jump to section*/
 			function gotoAnchor(id){
 				var x;
+				var delta = 125;
+				if(isPhone) delta = 50;
 				if(id == "top")
 					x = 0;
 				else
-					x = $('a[name="'+id+'"]').offset().top - 125;
+					x = $('a[name="'+id+'"]').offset().top - delta;
 				$('html,body').animate({scrollTop:x},'slow');
 			}	
 			$(".profile .text .button").click(function(){
@@ -205,8 +233,9 @@
 			})
 			var isiPad = navigator.userAgent.match(/iPad/i) != null;
 			if (isiPad){
-				$(".imaged").css("background-attachment","scroll")
+				$(".imaged").css("background-attachment","scroll");
 			}
+			var isPhone = navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
 		</script>
 	</body>
 </html>
