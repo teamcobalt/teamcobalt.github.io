@@ -26,7 +26,7 @@ nav {
   text-align: center;
 }
 nav ul {
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 0;
   list-style: none;
 }
@@ -39,6 +39,22 @@ nav ul li {
 }
 nav ul li:hover {
   cursor: pointer;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav a.pull-left {
+  color: white;
+  display: block;
+  float: none !important;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.35em;
+}
+nav a.pull-left img {
+  margin: -5px 5px 0 0;
 }
 h1 {
   text-transform: uppercase;
@@ -57,6 +73,23 @@ header p {
   color: white;
   padding: 100px 0 50px;
   text-align: center;
+}
+.landing a {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  margin: 2.5em auto -1em;
+  font-size: 1.25em;
+  font-weight: 100;
+  width: 250px;
+}
+.landing a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #1C58AD;
 }
 .header-logo img {
   display: inline-block;
@@ -242,9 +275,19 @@ header p {
     font-size: 1.15em;
     margin: 0 15px;
   }
+  nav a.pull-left {
+    float: left !important;
+    margin-bottom: 0;
+  }
   .landing {
     padding: 150px 0;
     text-align: left;
+  }
+  .landing.short {
+    padding: 150px 0;
+  }
+  .landing.short .header-logo img {
+    width: 150px;
   }
   .overview .heading {
     text-align: right;
@@ -311,7 +354,7 @@ header p {
     margin: 0 25px;
   }
   .landing {
-    padding: 225px 0;
+    padding: 225px 0 175px;
   }
   .imaged {
     background: no-repeat center center fixed;

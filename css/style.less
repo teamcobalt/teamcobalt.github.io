@@ -21,7 +21,7 @@ nav{
 	z-index:999;
 	text-align:center;
 	ul{
-		margin:0;
+		margin:5px 0 0 0;
 		padding:0;
 		list-style:none;
 		li{
@@ -34,6 +34,22 @@ nav{
 			&:hover{
 				cursor:pointer;
 			}
+			a{
+				color:white;
+				text-decoration:none;
+			}
+		}
+	}
+	a.pull-left{
+		color:white;
+		display:block;
+		float:none !important;
+		margin-bottom:15px;
+		text-decoration:none;
+		font-weight:normal;
+		font-size:1.35em;
+		img{
+			margin:-5px 5px 0 0;
 		}
 	}
 }
@@ -54,6 +70,23 @@ header p{
 	color:white;
 	padding:100px 0 50px;
 	text-align:center;
+	a{
+		display:inline-block;
+		padding:10px;
+		text-transform:uppercase;
+		border:1px solid white;
+		color:white;
+		text-align:center;
+		margin:2.5em auto -1em;
+		font-size:1.25em;
+		font-weight:100;
+		width:250px;
+		&:hover{
+			text-decoration:none;
+			background-color:white;
+			color:@cobalt-blue;
+		}
+	}
 }
 .header-logo{
 	img{
@@ -238,10 +271,20 @@ header p{
 			font-size:1.15em;
 			margin:0 15px;
 		}
+		a.pull-left{
+			float:left !important;
+			margin-bottom:0;
+		}
 	}
 	.landing{
 		padding:150px 0;
 		text-align:left;
+		&.short{
+			padding:150px 0;
+			.header-logo img{
+				width:150px;
+			}
+		}
 	}
 	.overview .heading{
 		text-align:right;
@@ -313,7 +356,7 @@ header p{
 		}
 	}
 	.landing{
-		padding:225px 0;
+		padding:225px 0 175px;
 	}
 	.imaged{
 		background:no-repeat center center fixed;

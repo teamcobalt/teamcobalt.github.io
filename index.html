@@ -61,13 +61,18 @@
 		</nav>
 		<div class="container-fluid">
 			<section class="landing col-xs-12">
-				<div class="col-sm-4 header-logo">
-					<img src="img/cobalt-white.png" alt="Cobalt Logo" />
+				<div class="row">
+					<div class="col-sm-4 header-logo">
+						<img src="img/cobalt-white.png" alt="Cobalt Logo" />
+					</div>
+					<header class="col-sm-7 col-md-5">
+						<h1>Team Cobalt</h1>
+						<p>A <b>METALS</b> Capstone Project | 20<b>16</b></p>
+					</header>
 				</div>
-				<header class="col-sm-7 col-md-5">
-					<h1>Team Cobalt</h1>
-					<p>A <b>METALS</b> Capstone Project | 20<b>16</b></p>
-				</header>
+				<div class="text-center">
+					<a href="register.html">Register for our study</a>
+				</div>
 			</section>
 			<section class="col-xs-12 overview">
 				<div class="blank">
@@ -83,11 +88,11 @@
 				</div>
 			</section>
 			<section class="col-xs-12 overview">
+				<a name="client"></a>
 				<div class="imaged client">
 					<div class="overlay"></div>
 					<div class="row">
 						<div class="col-sm-4 heading">
-							<a name="client"></a>
 							<h2>Our Client</h2>
 						</div>
 					</div>
@@ -104,11 +109,11 @@
 				</div>
 			</section>
 			<section class="col-xs-12 overview">
+				<a name="process"></a>
 				<div class="imaged how">
 					<div class="overlay"></div>
 					<div class="row">
 						<div class="col-sm-4 heading">
-							<a name="process"></a>
 							<h2>Our Process</h2>
 						</div>
 					</div>
@@ -189,11 +194,11 @@
 				</div>
 			</section>
 			<section class="col-xs-12 overview">
+				<a name="findings"></a>
 				<div class="imaged finding">
 					<div class="overlay"></div>
 					<div class="row">
 						<div class="col-sm-4 heading">
-							<a name="findings"></a>
 							<h2>Our Findings</h2>
 						</div>
 					</div>
@@ -259,11 +264,11 @@
 				</div>
 			</section>
 			<section class="col-xs-12 overview">
+				<a name="team"></a>
 				<div class="imaged who">
 					<div class="overlay"></div>
 					<div class="row">
 						<div class="col-sm-4 heading">
-							<a name="team"></a>
 							<h2>Our Team</h2>
 						</div>
 					</div>
@@ -336,7 +341,7 @@
 			/*jump to section*/
 			function gotoAnchor(id){
 				var x;
-				var delta = 125;
+				var delta = 0;
 				if(isPhone) delta = 50;
 				if(id == "top")
 					x = 0;

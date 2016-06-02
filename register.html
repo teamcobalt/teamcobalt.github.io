@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CMU Study Registration | Team Cobalt</title>
+		
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" item-content="IE=edge,chrome=1">
+        <meta name="description" item-content="METALS Capstone 2016 - Team Cobalt's site">
+		
+		<!--remove if not responsive-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" >
+
+		<!--facebook meta properties-->
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="img/cobalt-blue.png" />
+		<meta property="og:title" content="Cobalt | METALS Capstone 2016"/>
+		<meta property="og:url" content="http://cobalt.halidaastatin.com"/>
+		<meta property="og:site_name" content="Cobalt | METALS Capstone 2016"/>
+		<meta property="og:description" content="METALS Capstone 2016 - Team Cobalt's site">
+		
+		<!--favicon settings-->
+		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="icons/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="icons/manifest.json">
+		<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="icons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="icons/browserconfig.xml">
+		<meta name="theme-color" content="#faf7f5">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Hind:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!--remove if this supports IE7 and below-->
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+		<nav class="container-fluid">
+			<a href="/" class="pull-left">TEAM <b>COBALT</b></a>
+			<ul>
+				<li><a href="index.html#client">Client</a></li>
+				<li><a href="index.html#process">Process</a></li>
+				<li><a href="index.html#findings">Findings</a></li>
+				<li><a href="index.html#team">Team</a></li>
+			</ul>
+		</nav>
+		<div class="container-fluid">
+			<section class="landing short col-xs-12">
+				<div class="row">
+					<div class="col-sm-4 header-logo">
+						<img src="img/cobalt-white.png" alt="Cobalt Logo" />
+					</div>
+					<header class="col-sm-7 col-md-6">
+						<h1>Register</h1>
+						<p>High School <b>Career Tracking</b> Study</p>
+					</header>
+				</div>
+			</section>
+			<section class="col-xs-12 overview">
+				<div class="blank">
+					<div class="row">
+						<div class="col-sm-3 heading">
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<p>If  you are a high school student, or a recent high school graduate, you are eligible to take part in our user study. Please read the direction in the form below, and fill out the form to register for the study. Thank you for your interest!</p>
+							<p style="font-size:1em"><i>If you have trouble viewing the form, you can access it <a href="https://docs.google.com/forms/d/184n5cQ4qQBjavL0ITtG6XLnUoiMVH5GLA00Xtb0vIZY/viewform">here</a>.</i></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-offset-2 col-sm-8">
+							<iframe src="https://docs.google.com/forms/d/184n5cQ4qQBjavL0ITtG6XLnUoiMVH5GLA00Xtb0vIZY/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+						
+		</div>
+		<script src="js/jquery.js"></script>
+		<script>
+			/*jump to section*/
+			function gotoAnchor(id){
+				var x;
+				var delta = 125;
+				if(isPhone) delta = 50;
+				if(id == "top")
+					x = 0;
+				else
+					x = $('a[name="'+id+'"]').offset().top - delta;
+				$('html,body').animate({scrollTop:x},'slow');
+			}	
+			$(".profile .text .button").click(function(){
+				var _this = $(this);
+				var isOpened = true;
+				if((_this.hasClass("hidden-xs") && _this.find("i").hasClass("fa-chevron-up")) || (_this.hasClass("visible-xs") && _this.find("i").hasClass("fa-chevron-down"))) isOpened = false;
+				if(!isOpened){
+					_this.parent().css("height","100%");
+					if(_this.hasClass("hidden-xs"))
+						_this.css({"top":"20px"});
+				}
+				else{
+					_this.parent().css("height","85px");
+					if(_this.hasClass("hidden-xs"))
+						_this.css({"top":"-20px"});
+				}
+				_this.find('i').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
+			})
+			var isiPad = navigator.userAgent.match(/iPad/i) != null;
+			if (isiPad){
+				$(".imaged").css("background-attachment","scroll");
+			}
+			var isPhone = navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
+		</script>
+	</body>
+</html>
