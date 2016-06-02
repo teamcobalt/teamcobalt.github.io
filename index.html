@@ -334,6 +334,7 @@
 					</div>
 				</div>
 			</section>
+			<div id="back-to-top"><i class="fa fa-chevron-up"></i></div>
 						
 		</div>
 		<script src="js/jquery.js"></script>
@@ -348,7 +349,10 @@
 				else
 					x = $('a[name="'+id+'"]').offset().top - delta;
 				$('html,body').animate({scrollTop:x},'slow');
-			}	
+			}
+			$("#back-to-top").click(function(){
+				$('html,body').animate({scrollTop:0},'slow');
+			})
 			$(".profile .text .button").click(function(){
 				var _this = $(this);
 				var isOpened = true;

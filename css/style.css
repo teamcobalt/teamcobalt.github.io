@@ -68,6 +68,23 @@ header p {
   font-weight: 300;
   text-transform: uppercase;
 }
+#back-to-top {
+  position: fixed;
+  font-size: 2em;
+  border: 1px solid #1C58AD;
+  color: #1C58AD;
+  padding: 5px 10px;
+  background-color: #f6f8f8;
+  border-radius: 3px;
+  bottom: 10px;
+  right: 10px;
+}
+#back-to-top:hover {
+  cursor: pointer;
+  padding: 7px 12px;
+  bottom: 8px;
+  right: 8px;
+}
 .landing {
   background-color: #1C58AD;
   color: white;
