@@ -36,6 +36,7 @@ nav ul li {
   display: inline-block;
   font-weight: 500;
   text-transform: uppercase;
+  padding: 0;
 }
 nav ul li:hover {
   cursor: pointer;
@@ -43,6 +44,16 @@ nav ul li:hover {
 nav ul li a {
   color: white;
   text-decoration: none;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  margin: -5px -10px;
+  display: block;
+}
+nav ul li a:hover,
+nav ul li a:active {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
 }
 nav a.pull-left {
   color: white;
@@ -137,9 +148,20 @@ header p {
   text-transform: uppercase;
   border-bottom: 1px solid #1C58AD;
 }
+.overview .research h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2em 0 0;
+  color: #4a4a4a;
+}
 .overview .research img {
   width: 100%;
   margin: 1.5em auto;
+}
+.overview .research img.screen {
+  width: 75%;
+  border: 1px solid #ABABAB;
+  margin: 1.5em 12.5%;
 }
 .overview .research ul {
   margin-bottom: 1.5em;
@@ -209,6 +231,9 @@ header p {
 }
 .imaged.finding {
   background-image: url(../img/findingbg.JPG);
+}
+.imaged.development {
+  background-image: url(../img/development.jpg);
 }
 .imaged h2 {
   border-color: white;
@@ -283,6 +308,31 @@ header p {
 .no-padding {
   padding: 0;
 }
+.container-fluid:after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+footer {
+  margin: 2em 0 0;
+  padding: 1.5em 5px;
+  background-color: #E6E9ED;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  margin: 4em 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+footer ul li a {
+  color: #1C58AD;
+  display: block;
+}
+footer h2 {
+  margin-top: .5em;
+  text-transform: uppercase;
+}
 @media screen and (min-width: 769px) {
   nav {
     text-align: right;
@@ -319,6 +369,7 @@ header p {
   }
   .profile {
     width: 70%;
+    margin: 0 15px 2em;
     padding: 0 0 85px;
   }
   .profile .text {
@@ -344,6 +395,12 @@ header p {
     display: inline-block;
     width: 175px;
   }
+  footer {
+    text-align: left;
+  }
+  footer ul {
+    margin-top: 4.2em;
+  }
   .overview h2 {
     margin: 0 0 1em;
     text-align: right;
@@ -356,6 +413,12 @@ header p {
     margin: 0 0 0 10%;
     text-align: right;
     width: 90%;
+  }
+  .overview .research img.screen {
+    width: 45%;
+    margin-right: 1em;
+    margin-left: 0;
+    vertical-align: top;
   }
   .overview .research .col-sm-4 {
     text-align: right;
