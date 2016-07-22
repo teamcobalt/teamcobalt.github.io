@@ -89,6 +89,7 @@ header p {
   border-radius: 3px;
   bottom: 10px;
   right: 10px;
+  z-index: 999;
 }
 #back-to-top:hover {
   cursor: pointer;
